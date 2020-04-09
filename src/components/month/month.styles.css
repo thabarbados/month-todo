@@ -1,0 +1,41 @@
+.monthContainer {
+    display: grid;
+    grid-template-rows: 40px;
+    justify-content: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+}
+
+.header {
+    text-align: left;
+    font-weight: bold;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    column-gap: 20px;
+    grid-auto-rows: 30px;
+    row-gap: 20px;
+    height: auto;
+}
+
+.dayName {
+    font-weight: bold;
+    color: gray;
+}
+
+.day {
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.selected {
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 50%;
+}
+
+.dayWithData {
+    color: red;
+}

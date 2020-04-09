@@ -1,4 +1,8 @@
 #app {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    column-gap: 20px;
+    justify-content: center;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

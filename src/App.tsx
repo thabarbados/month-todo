@@ -1,16 +1,17 @@
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld';
+import { Component, Vue } from "vue-property-decorator";
+import Month from "./components/month/month.component";
+import Day from "./components/day/day.component";
 
-import './App.css'
+import "./App.css";
 
-@Component 
+@Component
 export default class App extends Vue {
   render() {
     return (
       <div id="app">
-        <img alt="Vue logo" src={require('./assets/logo.png')} />
-        <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+        <Month />
+        <Day />
       </div>
-    )
+    );
   }
 }
